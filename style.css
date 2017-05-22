@@ -1,0 +1,320 @@
+/*colors used:
+blue: #729f98 - rgba(114, 159, 152, 1)
+dark green: #283018 - rgba(40, 48, 24, 1)
+yellow/peach: #aa863a - rgba(170, 134, 58, 1)
+
+black: #
+
+white (very light gray) : #f0eceb -  rgba(240, 236, 235, 1)
+white (but not really): #fafafa
+
+COLOR FINAL 
+
+black (extremely dark grey): #303030;
+white (very light gray) : #f0eceb -  rgba(240, 236, 235, 1)
+orange : #ef6300 -  rgba(239, 99, 0, 1)
+*/
+
+*{
+	padding: 0 auto;
+	margin: 0 auto;
+
+	font-family: 'Roboto Slab', serif;
+	/*Animation*/
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+/*Remove underlining of a href tags */
+a:hover, a:focus, a:active, a:visited {
+  text-decoration: none;
+	font-family: 'Roboto Slab', serif;
+}
+
+.pic-size-140 {
+	width: 140px;
+	height: 140px;
+}
+.orange-cl {
+	color: #ef6300;
+}
+.green-bg {
+	background-color: #283018;
+}
+.green-cl {
+	color: #283018;
+}
+.super-white-bg {
+	background-color: #fafafa;
+}
+.white-bg {
+	background-color: #f0eceb;
+}
+.white-cl {
+	color: #f0eceb;
+}
+.black-bg {
+	background-color: #303030;
+}
+.black-cl {
+	color: #303030;
+}
+.blue-bg {
+	background-color: #729f98;
+}
+.blue-cl {
+	color: #729f98;
+}
+.yellow-bg {
+	background-color: #aa863a;
+}
+.yellow-cl {
+	color: #aa863a;
+}
+.title-name {
+	font-size: 60px;
+	color: #f0eceb;
+}
+#header {
+	background-image: url("cover-photo.JPG");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: grayscale(1); /* Old WebKit */
+  	filter: grayscale(1);
+}
+#parallax-divider {
+	background-image: url("cover-photo4.JPG");
+	height: 60vh;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: grayscale(1); /* Old WebKit */
+  	filter: grayscale(1);
+}
+.exp-logo, .exp-logo-2, .exp-logo-3, .edu-logo, .edu-logo-2, .edu-logo-3 {
+	position: absolute;
+	margin-top: 55px;
+	margin-left: -10px;
+}
+.center {
+	text-align: center;
+}
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header, #timeline, #projects {
+	min-height:100vh;
+}
+#about {
+	min-height: 65vh;
+}
+#contact {
+	min-height:60vh;
+}
+.round {
+	border-radius: 12px;
+}
+#footer {
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    height: 10vh;
+}
+#scroll-up-btn {
+	position: fixed;
+	height: 7vh;
+	width: 7vh;
+	margin-bottom: 15vh;
+	margin-right: 5vh;
+	bottom: 0;
+	right: 0;
+	background-color: black;
+	opacity: 0.4;
+	border-radius: 10px;
+}
+#scroll-up-btn a {
+	font-size: 50px;
+}
+.box {
+	padding-left: 10px;
+	padding-right: 10px;
+	min-height: 50vh;
+	border-radius: 10px;
+}
+.margin-20 {
+	margin: 20px;
+}
+.margin-b20 {
+	margin-bottom: 20px;
+}
+.margin-b50 {
+	margin-bottom: 50px;
+}
+.margin-b100 {
+	margin-bottom: 100px;
+}
+.margin-t20 {
+	margin-top: 20px;
+}
+.margin-t50 {
+	margin-top: 50px;
+}
+.margin-t100 {
+	margin-top: 100px;
+}
+.padding-10 {
+	padding: 10px;
+}
+.padding-30 {
+	padding: 30px;
+}
+.fill-square:hover .fa-square-o,
+.fill-square .fa-square {
+    display: none;
+}
+.fill-square:hover .fa-square {
+    display: inline;
+}
+
+/*this is for project seciton*/
+
+.height-0 {
+	height: 0px;
+}
+.height-auto {
+	height: auto;
+}
+
+.box:hover {
+	box-shadow: 0px 0px 5px grey;
+}
+.project-box {
+	max-height: 0px;
+    visibility: hidden;
+    opacity: 0;
+    /*-webkit-transition: all 0.5s ease-in 0.3s;
+    -moz-transition: all 0.5s ease-in 0.3s;
+	-o-transition: all 0.5s ease-in 0.3s;
+	-ms-transition: all 0.5s ease-in 0.3s;*/
+    transition: visibility 0.5s ease 0.3s,
+    			opacity 0s ease 0s,
+    			height 0.4s ease 0s;
+}
+.box:hover .project-box {
+	max-height: 400px;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.1s ease 0.1s,
+    			opacity 0s ease 0s;
+}
+.box:hover .fa{
+	color: grey;
+}
+.box:hover .proj-t {
+	color: grey;
+}/*
+.box .height-change {
+	height: 0px;
+	transition: height 0.5s ease 3s;
+}
+.box:hover .height-change {
+	height: auto;
+	transition: height 0.5s ease 0s;
+}*/
+
+
+/*end of project section*/
+
+
+
+
+/*adopted from additional bootstrap css codes*/
+/*custom navbar from bootstrap grayscale theme (edited to my liking)*/
+.navbar-custom {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(170, 134, 58, 0.3);
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  background-color: #aa863a;
+}
+.navbar-custom .navbar-toggle {
+  color: white;
+  background-color: rgba(240, 236, 235, 0.2);
+  font-size: 12px;
+}
+.navbar-custom .navbar-toggle:focus,
+.navbar-custom .navbar-toggle:active {
+  outline: none;
+}
+.navbar-custom .navbar-brand {
+  font-weight: 700;
+}
+.navbar-custom .navbar-brand:focus {
+  outline: none;
+}
+.navbar-custom a {
+  color: white;
+}
+.navbar-custom .nav li a {
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+.navbar-custom .nav li a:hover {
+  color: rgba(40, 48, 24, 0.8);
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+  outline: none;
+  background-color: transparent;
+}
+.navbar-custom .nav li.active {
+  outline: none;
+}
+.navbar-custom .nav li.active a {
+  background-color: rgba(240, 236, 235, 0.3);
+}
+.navbar-custom .nav li.active a:hover {
+  color: white;
+}
+@media (min-width: 768px) {
+  .navbar-custom {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+  }
+  .navbar-custom.top-nav-collapse {
+    padding: 0;
+    background: black;
+    border-bottom: 1px solid rgba(240, 236, 235, 0.3);
+  }
+}
+@media (min-width: 768px) {
+  .navbar-custom.affix {
+    background-color: #aa863a;
+    padding: 10px 0;
+  }
+  .navbar-custom.affix .navbar-brand {
+  	color: #283018;
+    font-size: 1.5em;
+  }
+}
+/*end of custom navbar*/
+
+@media (min-height: 150vh) {
+	.animation-1 {
+		color: red;
+	}
+}
