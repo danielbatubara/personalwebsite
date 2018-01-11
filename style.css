@@ -318,3 +318,8 @@ a:hover, a:focus, a:active, a:visited {
 		color: red;
 	}
 }
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
