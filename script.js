@@ -84,7 +84,7 @@ $(document).ready(function() {
 		belowElement = false;
         };
     if($(window).scrollTop() > frontEndDiv*0.8 && belowElement2) {
-  		$(".turing-2").animate({"margin-left": "135px"}, 50);
+  		$(".turing").animate({"margin-left": "135px"}, 50);
 		$(".exp-logo-2").delay(800).fadeIn(1000);
 		belowElement2 = false;
         };

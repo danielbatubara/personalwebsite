@@ -76,7 +76,7 @@ a:hover, a:focus, a:active, a:visited {
 	color: #f0eceb;
 }
 #header {
-	background-image: url("cover-photo.JPG");
+	background-image: url("cover-photo-compressed.JPG");
 	height: 100%;
 	background-attachment: fixed;
 	background-position: center;
@@ -86,7 +86,7 @@ a:hover, a:focus, a:active, a:visited {
   	filter: grayscale(1);
 }
 #parallax-divider {
-	background-image: url("cover-photo4.JPG");
+	background-image: url("cover-photo4-compressed.JPG");
 	height: 60vh;
 	background-attachment: fixed;
 	background-position: center;
